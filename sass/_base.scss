@@ -1,0 +1,22 @@
+// COLOR VARIABLES
+$color-primary: #503392;
+$color-secondary-dark: #333333;
+$color-secondary-light: #555555;
+$color-grey-light: #555555;
+
+// FONT VARIABLE
+$font-family: "Open Sans", sans-serif;
+
+// GLOBAL RESET
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; // 10px/16px = 62.5% => 1rem = 10px
+}
