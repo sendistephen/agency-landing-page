@@ -1,5 +1,9 @@
 // COLOR VARIABLES
-$color-primary: #503392;
+$color-primary-1: #503392;
+$color-primary-2: #673ab7;
+$color-primary-3: #341d5c;
+$color-white: #fff;
+$color-tertiary: #cecece;
 $color-secondary-dark: #333333;
 $color-secondary-light: #555555;
 $color-grey-light: #555555;
@@ -19,4 +23,21 @@ $font-family: "Open Sans", sans-serif;
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; // 10px/16px = 62.5% => 1rem = 10px
+}
+
+body {
+	font-family: $font-family;
+	color: $color-secondary-dark;
+	font-weight: 400;
+	line-height: 1.6;
+}
+.container {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+// BUTTON
+.btn{
+
+   cursor: pointer;
 }
