@@ -1,0 +1,40 @@
+.services {
+	.services-wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__header {
+		margin-right: 20rem;
+
+		h1 {
+			font-size: 8rem;
+			line-height: 1;
+			text-transform: uppercase;
+			color: $color-tertiary;
+		}
+	}
+
+	&__category {
+		&-item {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 3rem;
+
+			img {
+				height: 3rem;
+			}
+		}
+		&-content {
+			cursor: pointer;
+			margin-left: 3rem;
+
+			p {
+				width: 70%;
+				font-size: 1.2rem;
+			}
+			.heading-4:hover {
+				color: $color-primary-2;
+			}
+		}
+	}
+}
