@@ -109,6 +109,47 @@ body {
       color: #fff;
       font-weight: 300; }
 
+.portfolio__content-box {
+  text-align: center; }
+
+.portfolio__para {
+  font-size: 1.4rem; }
+
+.portfolio .heading-1 {
+  color: #333333; }
+
+.portfolio__list {
+  list-style: none;
+  display: flex;
+  justify-content: center; }
+
+.portfolio__item {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin: 1rem; }
+
+.portfolio__link:link, .portfolio__link:visited {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  color: #333333;
+  border: 1px solid #333333; }
+
+.portfolio__link:hover {
+  background-color: #503392;
+  color: #fff;
+  border: 1px solid #503392; }
+
+.portfolio__gallery {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-wrap: wrap; }
+
+.portfolio__gallery-item img {
+  width: 20rem; }
+
 .services .services-wrapper {
   display: flex;
   justify-content: space-between; }
