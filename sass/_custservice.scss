@@ -19,16 +19,71 @@
 	.heading-1 {
 		color: $color-primary-2;
 		font-weight: 300;
+
+		animation: moveInLeft 1s ease-out;
 	}
 	.excep-para {
 		width: 80%;
 		font-size: 1.4rem;
+
+		animation: moveInRight 1s ease-out;
 	}
+	.btn:link,
+	.btn:active {
+		text-decoration: none;
+		display: inline-block;
+		transition: all 0.2s;
+	}
+
 	.btn-custservice {
 		padding: 1.2rem 3rem;
 		background-color: $color-primary-1;
 		color: $color-tertiary;
-		text-decoration: none;
 		font-size: 1.4rem;
+
+		animation: moveInBottomUp 1s ease-out 0.75s;
+		animation-fill-mode: backwards;
+
+		&:hover {
+			transform: translateY(-0.3rem);
+			box-shadow: 0 1rem 2rem rgba(167, 96, 233, 0.4);
+			color: $color-white;
+		}
+		&:active {
+			transform: translateY(-0.1rem);
+			box-shadow: 0 0.5rem 1rem rgba(167, 96, 233, 0.4);
+		}
+	}
+
+	// Animations
+	@keyframes moveInLeft {
+		0% {
+			opacity: 0;
+			transform: translateX(-15rem);
+		}
+		100% {
+			opacity: 1;
+			transform: translate(0);
+		}
+	}
+	@keyframes moveInRight {
+		0% {
+			opacity: 0;
+			transform: translateX(15rem);
+		}
+		100% {
+			opacity: 1;
+			transform: translate(0);
+		}
+	}
+	@keyframes moveInBottomUp {
+		0% {
+			opacity: 0;
+			transform: translateY(3rem);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
 	}
 }
