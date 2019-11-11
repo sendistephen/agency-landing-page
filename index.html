@@ -15,6 +15,10 @@
 			integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 			crossorigin="anonymous"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css"
+		/>
 
 		<title>Amazing</title>
 	</head>
@@ -60,14 +64,14 @@
 		<section class="services mt">
 			<div class="container">
 				<div class="services-wrapper">
-					<div class="services__header">
+					<div class="services__header" data-aos="fade-right">
 						<h1>
 							What <br />
 							we <br />
 							do
 						</h1>
 					</div>
-					<div class="services__category">
+					<div class="services__category" data-aos="fade-left">
 						<div class="services__category-item">
 							<img src="images/icon-1.png" alt="" />
 							<div class="services__category-content">
@@ -119,15 +123,21 @@
 		<section class="custservice mt">
 			<div class="container">
 				<div class="custservice__content-box">
-					<h1 class="heading-1 mb" data-aos-easing="ease-in-out">
+					<h1 class="heading-1 mb" data-aos="fade-right">
 						Exceptional Customer Service
 					</h1>
-					<p class="excep-para mb">
+					<p class="excep-para mb" data-aos="fade-left">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
 						quia ullam cupiditate praesentium dolor in id aspernatur
 						reprehenderit maiores dolore.
 					</p>
-					<a href="#" class="btn btn-custservice">Need to help? lets Chat</a>
+					<a
+						href="#"
+						class="btn btn-custservice"
+						data-aos="fade-up"
+						data-aos-duration="1s"
+						>Need to help? lets Chat</a
+					>
 				</div>
 			</div>
 			<div class="custservice__cover"></div>
@@ -135,8 +145,10 @@
 		<section class="portfolio mt">
 			<div class="container">
 				<div class="portfolio__content-box">
-					<h1 class="heading-1 mb">Our Portfolio</h1>
-					<p class="portfolio__para mb">
+					<h1 class="heading-1 mb" data-aos="fade-down" data-aos-duration="1s">
+						Our Portfolio
+					</h1>
+					<p class="portfolio__para mb" data-aos="fade-up">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
 						itaque quod ab
 					</p>
@@ -191,7 +203,7 @@
 		<section class="statistics mt">
 			<div class="statistics__wrapper">
 				<div class="statistics__content">
-					<i class="fa fa-user-plus fa-3x"></i>
+					<i class="fa fa-user-plus fa-3x" aria-hidden="true"></i>
 					<span>3,800+</span>
 					<p>Satisfied Clients</p>
 				</div>
@@ -228,9 +240,12 @@
 						<input type="text" placeholder="Full Name" />
 						<input type="text" placeholder="Email" />
 						<input type="text" placeholder="Subject" />
-						<textarea name="message" id="msg" cols="44" rows="5">
-Message</textarea
-						>
+						<textarea
+							placeholder="Write your message here"
+							id="msg"
+							cols="44"
+							rows="5"
+						></textarea>
 						<button class="btn-send">Send</button>
 					</form>
 					<div class="address">
@@ -267,5 +282,7 @@ Message</textarea
 				</div>
 			</div>
 		</div>
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+		<script src="./js/custom.js"></script>
 	</body>
 </html>

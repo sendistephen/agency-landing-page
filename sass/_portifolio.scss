@@ -42,8 +42,14 @@
 		flex-wrap: wrap;
 	}
 	&__gallery-item {
+		overflow: hidden;
 		img {
 			width: 20rem;
+			transition: all 0.2s;
+		}
+		img:hover {
+			transform: scale(1.2);
+			cursor: pointer;
 		}
 	}
 }

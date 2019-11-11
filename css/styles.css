@@ -66,30 +66,6 @@ body {
       transform: translateY(-0.1rem);
       box-shadow: 0 0.5rem 1rem rgba(167, 96, 233, 0.4); }
 
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translateX(-15rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(15rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
-
-@keyframes moveInBottomUp {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
 .header {
   height: 80vh;
   background-image: linear-gradient(rgba(52, 29, 92, 0.8) 50%, rgba(103, 58, 183, 0.8) 100%), url(../images/hero.png);
@@ -227,8 +203,14 @@ body {
   margin: 0 auto;
   flex-wrap: wrap; }
 
-.portfolio__gallery-item img {
-  width: 20rem; }
+.portfolio__gallery-item {
+  overflow: hidden; }
+  .portfolio__gallery-item img {
+    width: 20rem;
+    transition: all 0.2s; }
+  .portfolio__gallery-item img:hover {
+    transform: scale(1.2);
+    cursor: pointer; }
 
 .services .services-wrapper {
   display: flex;
@@ -320,7 +302,8 @@ body {
       font-weight: 400;
       margin-bottom: 1rem; }
     .footer__content .footer-para {
-      margin-bottom: 3rem; }
+      margin-bottom: 3rem;
+      font-size: 1.3rem; }
   .footer .para-msg {
     margin: 2rem 0;
     font-size: 1.8rem;
@@ -331,19 +314,16 @@ body {
   .footer .form {
     display: flex;
     flex-direction: column;
-    margin-right: 7rem; }
-    .footer .form input {
+    margin-right: 7rem;
+    color: black; }
+    .footer .form input, .footer .form textarea {
       background-color: inherit;
       display: block;
       width: 30rem;
       padding: 1rem;
       margin-bottom: 1rem;
-      border: 1px solid #cecece; }
-    .footer .form #msg {
-      padding: 1rem;
-      color: #555555;
-      background-color: inherit;
-      border: 1px solid #cecece; }
+      border: 1px solid #cecece;
+      width: 100%; }
     .footer .form .btn-send {
       background-color: #503392;
       padding: 1rem 2rem;

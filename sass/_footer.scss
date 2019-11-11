@@ -14,6 +14,7 @@
 		}
 		.footer-para {
 			margin-bottom: 3rem;
+			font-size: 1.3rem;
 		}
 	}
 	.para-msg {
@@ -29,20 +30,17 @@
 		display: flex;
 		flex-direction: column;
 		margin-right: 7rem;
-		input {
+		color: black;
+		input,textarea {
 			background-color: inherit;
 			display: block;
 			width: 30rem;
 			padding: 1rem;
 			margin-bottom: 1rem;
 			border: 1px solid $color-tertiary;
+			width: 100%;
 		}
-		#msg {
-			padding: 1rem;
-			color: $color-secondary-light;
-			background-color: inherit;
-			border: 1px solid $color-tertiary;
-		}
+		
 		.btn-send {
 			background-color: $color-primary-1;
 			padding: 1rem 2rem;
@@ -78,14 +76,14 @@
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
-    }
-    .social{
-        .fa{
-            margin-left: 2rem;
-        }
-        .fa:hover{
-            cursor: pointer;
-            color: $color-tertiary;
-        }
-    }
+	}
+	.social {
+		.fa {
+			margin-left: 2rem;
+		}
+		.fa:hover {
+			cursor: pointer;
+			color: $color-tertiary;
+		}
+	}
 }
