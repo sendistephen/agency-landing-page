@@ -227,3 +227,71 @@ body {
 
 .mb {
   margin-bottom: 2rem; }
+
+.footer {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #555555;
+  color: #fff; }
+  .footer__content {
+    text-align: center; }
+    .footer__content .heading-3 {
+      color: #fff;
+      font-weight: 400;
+      margin-bottom: 1rem; }
+    .footer__content .footer-para {
+      margin-bottom: 3rem; }
+  .footer .para-msg {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    text-transform: capitalize; }
+  .footer .form-box {
+    display: flex;
+    flex-wrap: wrap; }
+  .footer .form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 7rem; }
+    .footer .form input {
+      background-color: inherit;
+      display: block;
+      width: 30rem;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #cecece; }
+    .footer .form #msg {
+      padding: 1rem;
+      color: #555555;
+      background-color: inherit;
+      border: 1px solid #cecece; }
+    .footer .form .btn-send {
+      background-color: #503392;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      color: #fff;
+      text-align: center;
+      cursor: pointer; }
+  .footer .address .para-address {
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+  .footer .address__box {
+    display: flex;
+    flex-direction: column; }
+  .footer .address__item {
+    display: flex;
+    margin-bottom: 2rem; }
+  .footer .address .fa {
+    margin-right: 2rem; }
+
+.footer-bottom {
+  background-color: #333333;
+  padding: 2rem 0;
+  color: grey; }
+  .footer-bottom__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .footer-bottom .social .fa {
+    margin-left: 2rem; }
+  .footer-bottom .social .fa:hover {
+    cursor: pointer;
+    color: #cecece; }

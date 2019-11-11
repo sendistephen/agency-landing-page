@@ -1,0 +1,91 @@
+.footer {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+	background-color: $color-secondary-light;
+	color: $color-white;
+
+	&__content {
+		text-align: center;
+
+		.heading-3 {
+			color: $color-white;
+			font-weight: 400;
+			margin-bottom: 1rem;
+		}
+		.footer-para {
+			margin-bottom: 3rem;
+		}
+	}
+	.para-msg {
+		margin: 2rem 0;
+		font-size: 1.8rem;
+		text-transform: capitalize;
+	}
+	.form-box {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+		margin-right: 7rem;
+		input {
+			background-color: inherit;
+			display: block;
+			width: 30rem;
+			padding: 1rem;
+			margin-bottom: 1rem;
+			border: 1px solid $color-tertiary;
+		}
+		#msg {
+			padding: 1rem;
+			color: $color-secondary-light;
+			background-color: inherit;
+			border: 1px solid $color-tertiary;
+		}
+		.btn-send {
+			background-color: $color-primary-1;
+			padding: 1rem 2rem;
+			margin-top: 1rem;
+			color: $color-white;
+			text-align: center;
+			cursor: pointer;
+		}
+	}
+	.address {
+		.para-address {
+			font-size: 1.8rem;
+			margin-bottom: 2rem;
+		}
+		&__box {
+			display: flex;
+			flex-direction: column;
+		}
+		&__item {
+			display: flex;
+			margin-bottom: 2rem;
+		}
+		.fa {
+			margin-right: 2rem;
+		}
+	}
+}
+.footer-bottom {
+	background-color: $color-secondary-dark;
+	padding: 2rem 0;
+	color: grey;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+    }
+    .social{
+        .fa{
+            margin-left: 2rem;
+        }
+        .fa:hover{
+            cursor: pointer;
+            color: $color-tertiary;
+        }
+    }
+}
