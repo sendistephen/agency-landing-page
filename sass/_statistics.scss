@@ -1,0 +1,34 @@
+.statistics {
+	background-image: url(../images/client-sat.png);
+	background-position: center;
+	background-attachment: scroll;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $color-primary-2;
+	background-blend-mode: soft-light;
+	color: $color-white;
+	height: 300px;
+
+	&__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-right: 10rem;
+
+		span {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 2rem;
+        }
+        p{
+            font-weight: 300;
+        }
+	}
+}
